@@ -1,6 +1,12 @@
 # This App Service example will download a file from Azure blob storage using System Assigned Managed Identity and Azure blob storage Java SDK.
 **To run this code**
 
+# Pre-requisites
+Storage account created
+
+Container create in the storage account
+
+Sample file present in the container for download
 
 # Clone and update files
 
