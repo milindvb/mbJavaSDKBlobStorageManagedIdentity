@@ -2,9 +2,9 @@
 **To run this code**
 
 # Pre-requisites
-Storage account created
+Storage account created (Gen purpose v2)
 
-Container create in the storage account
+Container created in the storage account
 
 Sample file present in the container for download
 
@@ -21,6 +21,8 @@ Update values of resource group and appname (search &quot;changeThis&quot; in th
 Update mystorage1 to your storage account name
 
 String endpoint = String.format(Locale.ROOT, &quot;https://%s.blob.core.windows.net&quot;, &quot;myteststorage1&quot;);
+
+Update container name and file name to download
 
 mvn clean package -DskipTests
 
