@@ -85,8 +85,8 @@
    </appSettings>
 
    <!-- Web App information -->
-   <resourceGroup>changethis-testappResourceGroup</resourceGroup>
-   <appName>changethis-testappName</appName>
+   <resourceGroup>changeThis-resourcegrp</resourceGroup>
+   <appName>changeThis-appname</appName>
    <region>centralus</region>
 
    <!-- Java Runtime Stack for Web App on Linux-->

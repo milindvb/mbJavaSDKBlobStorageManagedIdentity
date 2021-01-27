@@ -14,7 +14,7 @@ public class HelloController {
 
 	@RequestMapping("/")
 	public String index() {
-           String endpoint = String.format(Locale.ROOT, "https://%s.blob.core.windows.net", "mbteststorage1");
+           String endpoint = String.format(Locale.ROOT, "https://%s.blob.core.windows.net", "myteststorage1");
            BlobServiceClient storageClient = new BlobServiceClientBuilder()
               .endpoint(endpoint)
               .credential(new DefaultAzureCredentialBuilder().build())
@@ -30,6 +30,6 @@ public class HelloController {
            File downloadedFile = new File(localPath + downloadFileName);
            blobClient.downloadToFile(downloadFileName);
 
-           return "Greetings from Spring Boot1!";
+           return "File "+downloadFileName+" downloaded successfully";
         }
 }
